@@ -52,10 +52,10 @@ card.addEventListener('click', () => {
     );
   }, 250);
   
-    setTimeout(() => {
-        alert('tap sembarang pada background hitam')
-        hiddenMsglink.style.visibility = 'visible';
-        hiddenMsg.style.display = 'block'
+  setTimeout(() => {
+      hiddenMsglink.style.visibility = 'visible';
+      hiddenMsg.style.display = 'block'
+      alert('tap sembarang pada background hitam')
     }, 44000);
 })
 
