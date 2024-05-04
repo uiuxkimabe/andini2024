@@ -1,0 +1,146 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Indie Flower",cursive;
+    scroll-behavior: smooth;
+}
+
+/* root */
+:root {
+    /* color */
+    --black: #161616;
+    --basic: #fff;
+    --primary: #d11c67;
+    --secondary: #281cd1;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+body.start {
+    background: url(./img/andini\ 1.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all .9s ease-in-out;
+}
+
+/* content */
+
+.top-title {
+    text-align: center;
+}
+
+.top-title .mark {
+    color: var(--primary);
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin: 1em auto;
+    margin-bottom: 10rem;
+}
+
+.card .card-cover {
+    width: inherit;
+    height: 100%;
+    padding: 1em;
+    text-align: center;
+    background: url(./img/andini\ 2.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    color: var(--basic);
+    text-shadow: 3px 3px 6px rgb(0,0,0);
+    position: absolute;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover .card-cover {
+    transform-origin: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.card-cover .card-cover-title {
+    position: relative;
+    z-index: 1;
+}
+
+.card-cover span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 10; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(207deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    mix-blend-mode:hard-light;
+}
+
+.card-content {
+    padding: 1em;
+    background-color: var(--basic);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,.5);
+    flex-direction: column;
+}
+
+.card-content h3 {
+    text-align: center;
+}
+
+.card-content .message {
+    margin: .8em 0;
+    font-size: .9rem;
+}
+
+.sign {
+    text-align: center;
+    align-self: flex-end;
+}
+
+.hiddenNext {
+    visibility: hidden;
+}
+
+#hiddenmsg {
+    height: 100vh;
+    padding: 1em;
+    overflow: hidden;
+    background-color: var(--black);
+    color: var(--black);
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hiddenmsg h3 {
+    font-size: 1.5em;
+}
+
+#hiddenmsg .cursor {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--basic);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
