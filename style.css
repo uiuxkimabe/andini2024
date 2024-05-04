@@ -146,7 +146,3 @@ body.start {
     left: 0;
     z-index: -1;
 }
-
-.contentHidden {
-    background-color: #d11c67;
-}
