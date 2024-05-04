@@ -55,7 +55,7 @@ card.addEventListener('click', () => {
   setTimeout(() => {
       hiddenMsglink.style.visibility = 'visible';
       hiddenMsg.style.display = 'flex'
-      alert('tap tap pada kotak putih')
+      alert('tap tap pada bola putih')
     }, 44000);
 })
 

@@ -122,13 +122,13 @@ body.start {
 #hiddenmsg {
     height: 100vh;
     padding: 1em;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: var(--black);
     color: var(--black);
     text-align: center;
     position: relative;
     z-index: -1;
-    display: none;
+    /* display: none; */
     align-items: center;
 }
 
@@ -137,8 +137,9 @@ body.start {
 }
 
 #hiddenmsg .cursor {
-    width: 100%;
+    width: 200px;
     height: 200px;
+    border-radius: 50%;
     background-color: var(--basic);
     position: absolute;
     top: 0;
