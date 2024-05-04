@@ -116,7 +116,7 @@ body.start {
 }
 
 #hiddenmsg {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 1em;
     overflow: hidden;
     background-color: var(--black);
@@ -124,7 +124,7 @@ body.start {
     text-align: center;
     position: relative;
     z-index: -1;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;

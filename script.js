@@ -53,6 +53,7 @@ card.addEventListener('click', () => {
   }, 250);
   
     setTimeout(() => {
+        alert('tap sembarang pada background hitam')
         hiddenMsglink.style.visibility = 'visible';
         hiddenMsg.style.display = 'block'
     }, 44000);
